@@ -40,10 +40,10 @@ const ProductView = () => {
             <div className="seller-view-page">
                 <PageContainer>
                     <PageSection className="item-preview-area" width="33%">
-                        <div className="item"></div>
-                        <div className="item"></div>
-                        <div className="item"></div>
-                        <div className="item"></div>
+                        <div  onClick={() => setIsProductSliderShow(!isProductSilderShow)} className="item"></div>
+                        <div  onClick={() => setIsProductSliderShow(!isProductSilderShow)} className="item"></div>
+                        <div  onClick={() => setIsProductSliderShow(!isProductSilderShow)} className="item"></div>
+                        <div  onClick={() => setIsProductSliderShow(!isProductSilderShow)} className="item"></div>
                     </PageSection>
                     <PageSection className="form-area" width="60%">
                         <div className="upper-form">
@@ -59,7 +59,7 @@ const ProductView = () => {
                             </div>
                         </div>
                         <div className="lower-form">
-                            <textarea onClick={() => setIsProductSliderShow(!isProductSilderShow)} name="" id="" cols="30" rows="8" placeholder="Description" className="form-control"></textarea>
+                            <textarea name="" id="" cols="30" rows="8" placeholder="Description" className="form-control"></textarea>
                         </div>
                     </PageSection>
                 </PageContainer>
