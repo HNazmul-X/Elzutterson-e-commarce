@@ -1,0 +1,38 @@
+.bottom-bar{
+    position: fixed;
+    bottom:20px;
+    background:transparent;
+    width:100%;
+
+    .left ul, .right ul{
+        display:flex;
+        margin:0px;
+    }
+    .btm-bar-item{
+        list-style: none;
+        .btm-bar-link{
+            color:white;
+            display:inline-block;
+            text-decoration: none;
+            padding:7px 25px;
+            border-right:2px solid #c4c4c4;
+            
+
+        }
+    }
+    .right{
+        ul{
+            justify-content: flex-end;
+        }
+    }
+}
+@media screen and (max-width:900px){
+    .bottom-bar{
+        .btm-bar-item{
+            .btm-bar-link{
+                padding:5px;
+                font-size:12px
+            }
+        }
+    }
+}

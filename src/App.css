@@ -1,0 +1,24 @@
+.theme-button {
+    color: #456;
+    background: #c4c4c4;
+    border-radius: 30px;
+    padding: 5px 25px;
+    border: none;
+    text-align: center;
+}
+html {
+    overflow-y: hidden;
+}
+@media screen and (max-width:992px){
+    html{
+        overflow-y: auto;
+    }
+}
+.discrad {
+    background: darkred;
+    color: white;
+}
+.confirm {
+    background: darkgreen;
+    color: white;
+}

@@ -1,0 +1,39 @@
+.bottom-bar {
+  position: fixed;
+  bottom: 20px;
+  background: transparent;
+  width: 100%;
+}
+
+.bottom-bar .left ul, .bottom-bar .right ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0px;
+}
+
+.bottom-bar .btm-bar-item {
+  list-style: none;
+}
+
+.bottom-bar .btm-bar-item .btm-bar-link {
+  color: white;
+  display: inline-block;
+  text-decoration: none;
+  padding: 7px 25px;
+  border-right: 2px solid #c4c4c4;
+}
+
+.bottom-bar .right ul {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+@media screen and (max-width: 900px) {
+  .bottom-bar .btm-bar-item .btm-bar-link {
+    padding: 5px;
+    font-size: 12px;
+  }
+}
+/*# sourceMappingURL=BottomBar.css.map */

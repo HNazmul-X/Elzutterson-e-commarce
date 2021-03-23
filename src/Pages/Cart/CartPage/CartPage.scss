@@ -1,0 +1,125 @@
+#cart-page{
+    padding-top: 100px !important;
+    #cart-section{
+        padding:0px 60px;
+        border-right: 2px solid white;
+        overflow-y:auto;
+        height:75vh;
+        
+    }
+}
+
+
+
+// carousel and Chat box css here
+#carousel_form{
+    padding:60px;
+    padding-top: 0px;;
+    overflow-y: auto;
+    height:75vh;
+    .carousel-here{
+        background:white;
+        width:100%;
+        height:270px;
+
+    }
+    .name-of-product{
+        margin:30px auto;
+        h5, .head{
+            background:white;
+            padding:5px 20px;
+            width:300px;
+            text-align: center;
+            margin:auto;
+            border-radius: 30px;
+        }
+        textarea, .text-box{
+            display: block;
+            width: 100%;
+            margin-top:50px;;
+            background:peachpuff;
+            border-radius: 30px;;
+            height:150px;
+        }
+    }
+}
+
+
+@media screen and (max-width:992px){
+#cart-page{
+    #cart-section{
+        width:100% !important;
+        padding:20px;
+        border-right: none;
+        overflow-y:none;
+        height:auto;
+        
+    }
+}
+
+#carousel_form{
+    width: 100% !important;
+    padding:20px;
+    padding-top: 0px;;
+    overflow-y: hidden;
+    height:auto;
+    .carousel-here{
+        
+    }
+    .name-of-product{
+        textarea, .text-box{
+            
+        }
+    }
+}
+}
+
+
+
+/* cart item here */
+#cart-item{
+    width:100%;
+    // padding:20px;
+    padding-top:20px;
+    margin:auto;
+    border-bottom: 1px solid grey;
+    .img-cover{
+        width:20%;
+        .cart-item-img{
+        width:100px;
+        height:120px;
+        background:white;
+        border-radius: 10px;
+
+    }
+    }
+    .pd-name{
+        h5{
+            display: inline-block;
+        background:white;
+        padding:5px 20px;
+        border-radius:20px;
+        font-size: 16px;
+        }
+
+    }
+    .pd-status{
+       h5{
+            background:white;
+            width:130px;
+            text-align: center;
+            padding:5px;
+            border-radius: 30px;
+            font-size: 16px;
+       }
+    }
+    .price{
+        h4{
+            text-align: right;
+            margin-right:20px;
+        }
+    }
+}
+
+
+

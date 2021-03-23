@@ -1,0 +1,64 @@
+nav.navbar{
+    margin:auto;
+    width:100vw;
+    max-width: 100vw !important;
+    position: fixed;
+    top:0px;
+    left:50%;
+    z-index: 100;
+    transform: translateX(-50%);
+    .start-item{
+        &.navbar-brand img{
+            width:150px;
+            margin-right:50px;
+        }
+    }
+    .navbar-toggler {
+        .toggle-icon {
+            color:white;
+        }
+    }
+    .middle-item{
+        margin-left: auto;
+    }
+    .end-item{
+        margin-left: 80px;
+    }
+    .nav-item{
+        .nav-link{
+            min-width: 130px;
+            border-left:2px solid grey;
+            text-align: center;
+            color:white;
+            &:hover{
+                border:1px dotted #c4c4c4;
+            }
+            &:focus{
+                border:1px dotted #c4c4c4;
+
+            }
+        }
+    }
+    .store-img-logo{
+        width:60px;
+        height:40px;
+        object-fit: contain;
+    }
+}
+@media screen and (max-width:992px){
+    nav.navbar{
+        width:100%;
+        max-width: 100%;
+        background:rgba(0, 0, 0, 0.733);
+        .end-item{
+            margin-left: 0px;
+        }
+        .nav-item{
+            .nav-link{
+                border:none;
+                margin-bottom: 10px;
+            }
+        }
+
+    }
+}

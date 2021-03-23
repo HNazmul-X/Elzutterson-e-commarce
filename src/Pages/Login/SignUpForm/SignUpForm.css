@@ -1,0 +1,94 @@
+.form-area {
+  width: 480px;
+  margin: auto;
+  padding: 0px 30px;
+  display: -ms-grid;
+  display: grid;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  min-height: 100vh;
+}
+
+.form-area input {
+  border-radius: 10px;
+  color: #788f90;
+  font-weight: 600;
+}
+
+.form-area input::-webkit-input-placeholder {
+  font-weight: 600;
+  color: #788f90;
+}
+
+.form-area input:-ms-input-placeholder {
+  font-weight: 600;
+  color: #788f90;
+}
+
+.form-area input::-ms-input-placeholder {
+  font-weight: 600;
+  color: #788f90;
+}
+
+.form-area input::placeholder {
+  font-weight: 600;
+  color: #788f90;
+}
+
+.form-area input:focus {
+  outline: none;
+  background: #ffffff4f;
+  border: 2px dotted #788f90  !important;
+}
+
+.form-area .name-input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-bottom: 20px;
+}
+
+.form-area .name-input input {
+  padding: 5px;
+  border: none;
+  width: 40%;
+}
+
+.form-area .logo {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.form-area .logo img {
+  width: 20%;
+}
+
+.form-area button {
+  border-radius: 10px;
+}
+
+.form-area button.sign-up {
+  background: #4A9DFF;
+  color: white;
+  font-weight: 600;
+}
+
+.form-area button.login {
+  background: #64AB53  !important;
+  color: white;
+  width: 40%;
+}
+
+#sign-up-page, #login-page, #confirm-form-page {
+  background: url(../../../images/login-background.png) no-repeat fixed;
+  background-size: cover;
+}
+
+@media screen and (max-width: 500px) {
+  .form-area {
+    width: 100%;
+  }
+}
+/*# sourceMappingURL=SignUpForm.css.map */

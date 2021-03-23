@@ -1,0 +1,88 @@
+.all-products-page-container {
+  padding-top: 110px;
+}
+
+.all-products-page-container .filter-area {
+  width: 100%;
+  padding: 20px;
+  height: 77vh;
+}
+
+.all-products-page-container .filter-area .filter-box {
+  display: -ms-grid;
+  display: grid;
+  place-content: center;
+  width: 100%;
+  background: white;
+  height: 100%;
+  border-radius: 20px;
+}
+
+.product-card {
+  width: 180px;
+  border-radius: 15px;
+  height: 200px;
+  background: white;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  position: relative;
+  cursor: pointer;
+}
+
+.product-card:hover {
+  -webkit-box-shadow: 0px 0px 30px 2px #00000049;
+          box-shadow: 0px 0px 30px 2px #00000049;
+  -webkit-transform: scale3d(1.1, 1.1, 1.2);
+          transform: scale3d(1.1, 1.1, 1.2);
+}
+
+.product-card .product-image img {
+  width: 100%;
+  height: 100px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.product-card .desc {
+  text-align: center;
+}
+
+.product-card .mark-logo {
+  width: 30px;
+  position: absolute;
+  right: 8px;
+  top: 5px;
+}
+
+.product-card-container {
+  padding-top: 20px;
+  display: -ms-grid  !important;
+  display: grid  !important;
+  -ms-grid-rows: (200px)[2];
+      grid-template-rows: repeat(2, 200px);
+  gap: 20px;
+}
+
+.my-list-page {
+  overflow-x: scroll;
+  min-width: 100vw;
+  padding-top: 140px;
+  padding-left: 20px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+}
+
+.my-list-page .list-titel {
+  position: fixed;
+  top: 80px;
+  width: 100%;
+  text-align: center;
+  color: white;
+}
+
+.my-list-page .list-titel h1 {
+  font-weight: 800;
+}
+/*# sourceMappingURL=all-products.css.map */

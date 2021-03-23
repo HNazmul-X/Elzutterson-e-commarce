@@ -1,0 +1,68 @@
+@media screen and (max-width: 993px) {
+  .home-page .banner-container .desc {
+    margin-left: 0px;
+    color: white;
+    text-align: center;
+  }
+  .un-logo-part-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+  }
+  .un-logo-part-container .logo-part {
+    width: 100vw;
+    height: 70vh;
+  }
+}
+
+.home-page .banner-container .desc {
+  color: white;
+  text-align: center;
+  margin: auto;
+}
+
+.logo-part {
+  width: 33.33333vw;
+  padding-top: 150px;
+  height: 100vh;
+}
+
+.logo-part:nth-child(1) {
+  background: -webkit-gradient(linear, left top, left bottom, from(#011F5B), to(#990000));
+  background: linear-gradient(#011F5B, #990000);
+}
+
+.logo-part:nth-child(2) {
+  background: -webkit-gradient(linear, left top, left bottom, from(#E0A414), to(#1A3478));
+  background: linear-gradient(#E0A414, #1A3478);
+}
+
+.logo-part:nth-child(3) {
+  background: -webkit-gradient(linear, left top, left bottom, from(#921527), to(#c43b4f));
+  background: linear-gradient(#921527, #c43b4f);
+}
+
+.logo-part .img {
+  width: 90%;
+  margin: auto;
+  height: 200px;
+}
+
+.logo-part .img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.logo-part button {
+  width: 150px;
+  text-align: center;
+  background: #c4c4c4;
+  padding: 10px;
+  border-radius: 30px;
+  border: none;
+  margin-top: 20px;
+}
+/*# sourceMappingURL=Home.css.map */

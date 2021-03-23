@@ -1,0 +1,93 @@
+.profile-page-container {
+  height: 100vh;
+}
+
+.profile-page-container .form-site {
+  margin-top: 100px;
+  border-right: 2px solid #c4c4c4;
+  padding: 0px 4rem;
+  height: 450px;
+}
+
+.profile-page-container .form-site input {
+  margin: 20px 0;
+  border-radius: 40px;
+  background: rgba(255, 255, 255, 0.678);
+  font-weight: 700;
+  font-style: italic;
+  color: #4e4e4e;
+}
+
+.profile-page-container .form-site input::-webkit-input-placeholder {
+  font-weight: 700;
+  font-style: italic;
+}
+
+.profile-page-container .form-site input:-ms-input-placeholder {
+  font-weight: 700;
+  font-style: italic;
+}
+
+.profile-page-container .form-site input::-ms-input-placeholder {
+  font-weight: 700;
+  font-style: italic;
+}
+
+.profile-page-container .form-site input::placeholder {
+  font-weight: 700;
+  font-style: italic;
+}
+
+.profile-page-container .form-site .logo {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.profile-page-container .form-site .logo img {
+  width: 120px;
+  display: block;
+  margin: auto;
+}
+
+.profile-page-container .form-site .logo button {
+  border: none;
+  font-size: 14px;
+  border-radius: 30px;
+}
+
+.profile-page-container .form-site .two {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.profile-page-container .form-site .two input {
+  width: 40%;
+  margin: 10px 0px;
+}
+
+.profile-page-container .right-site {
+  margin-top: 120px;
+}
+
+.profile-page-container .right-site .logo {
+  text-align: center;
+}
+
+.profile-page-container .right-site .logo img {
+  width: 130px;
+}
+
+.profile-page-container .right-site .text {
+  margin-top: 70px;
+}
+
+.profile-page-container .right-site .text h1 {
+  font-style: italic;
+  color: #c4c4c4;
+  text-align: center;
+}
+/*# sourceMappingURL=ProfilePage.css.map */

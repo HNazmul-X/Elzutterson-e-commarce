@@ -1,0 +1,42 @@
+.catagory-item-card{
+    width:300px;
+    position: relative;
+    height:200px;
+    align-items:center;
+    overflow:hidden;
+    border-radius:20px;
+    img{
+        width:100%;
+    }
+    .ctgr-card-img img{
+        width:100%;
+        height:250px;
+        object-fit:cover;
+    }
+    .ctgr-caption{
+
+        position: absolute;
+        width:100%;
+        bottom:0px;
+        color:white;
+        background:rgba(0, 0, 0, 0.377);
+        text-align: center;
+    }
+}
+.catagories-container{
+    display: flex !important;
+    gap:40px;
+    flex-wrap: wrap;
+    margin:auto;
+    justify-content:space-around;
+}
+.all-catagory{
+    height:100vh;
+    overflow-x: auto;
+}
+@media screen and (max-width:992px){
+    .catagories-container{
+        width:100vw !important;
+        justify-content: center;
+    }
+}

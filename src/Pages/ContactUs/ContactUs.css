@@ -1,0 +1,32 @@
+#contact-us-page {
+  background: url(../../images/login-background.png);
+}
+
+#contact-us-page .title {
+  padding-top: 90px;
+  color: white;
+}
+
+#contact-us-page .form-site {
+  margin: 0px;
+  border: none;
+  padding-top: 20px;
+}
+
+#contact-us-page .form-site textarea, #contact-us-page .form-site input {
+  background: white;
+  border-radius: 20px;
+}
+
+#contact-us-page .right-site {
+  margin: 0px;
+}
+
+#contact-us-page .right-site .text {
+  width: 50%;
+  color: white;
+  margin: auto;
+  margin-top: 60px;
+  text-align: center;
+}
+/*# sourceMappingURL=ContactUs.css.map */

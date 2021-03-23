@@ -1,0 +1,86 @@
+.carousel_container {
+    position: fixed;
+    width:100%;
+    height:100vh;
+    top:0px;
+    left:0px;
+    .carousel_my_wrapper {
+        position: relative;
+        top:50%;
+        left:50%;
+        transform: translate(-50%, -50%);
+        width: 75%;
+        border-radius: 20px;
+        overflow: hidden;
+        height:auto;
+        background-color: white;
+        z-index: 2;
+        &:hover{
+            .prev_button,
+        .next_button{
+            opacity: 1;
+            pointer-events: all;
+        }
+        }
+        .alice-carousel {
+            .alice-carousel__stage {
+                .alice-carousel__stage-item {
+                    padding:120px;
+                    width:100% !important;
+                    transition: all 0.9s !important;
+                    text-align: center;
+                    height: 100%;
+                    bottom:0px;
+
+                }
+            }
+        }
+        .prev_button,
+        .next_button {
+            opacity: 0;
+            pointer-events: none;
+            position: absolute;
+            padding: 10px;
+            font-size: 60px;
+            border: none;
+            color: white;
+            background: black;
+            font-weight: 600;
+            line-height: 25px;
+            top:50%;
+            transform: translateY(-50%);
+            transition: 0.5s;
+            border-radius: 50%;
+            
+        }
+
+        .prev_button {
+            left:0;
+        }
+        .next_button {
+            right:0px;
+        }
+    }
+    .carousel-hider{
+        position: absolute;
+        width:100%;
+        height:160vh;
+        background:rgba(0, 0, 0, 0.418);
+        top:-55%;
+        left:0px;
+        z-index: 1;
+    }
+}
+
+.alice-carousel__stage-item.__active.__target{
+    background:grey;
+    animation: fade-in 0.7s ease-in-out  1 forwards ;
+}
+@keyframes fade-in {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}

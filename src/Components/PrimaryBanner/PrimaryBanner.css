@@ -1,0 +1,42 @@
+.banner-container {
+  width: 100%;
+  height: 100%;
+  display: -ms-grid;
+  display: grid;
+  place-content: center;
+}
+
+.banner-container .desc {
+  margin-left: 238px;
+}
+
+.banner-container .desc .main-head {
+  color: white;
+  font-size: 50px;
+  text-align: center;
+  letter-spacing: 5px;
+  line-height: 68px;
+  font-weight: 400;
+  word-spacing: 10px;
+}
+
+.banner-container .desc .btn {
+  background: #c4c4c4;
+  display: inline-block;
+  margin: auto;
+  padding: 7px 45px;
+  border: none;
+  border-radius: 200px;
+  color: black;
+}
+
+@media screen and (max-width: 992px) {
+  .banner-container .desc {
+    margin-left: 0px;
+  }
+  .banner-container .desc .main-head {
+    font-size: 40px;
+    line-height: 50px;
+  }
+}
+/*# sourceMappingURL=PrimaryBanner.css.map */
