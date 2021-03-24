@@ -1,4 +1,4 @@
-import React, { Children, useState } from "react";
+import React, { useState } from "react";
 import AliceCarousel from "react-alice-carousel";
 import "react-alice-carousel/lib/alice-carousel.css";
 import "./Carousel.css";
@@ -32,13 +32,14 @@ export const MyCarousel = ({ isShow ,children}) => {
         <>
             <div className={isShow ? "carousel_container" : "d-none"}>
                 <div className="carousel_my_wrapper">
-                    <AliceCarousel mouseTracking disableDotsControls disableButtonsControls infinite items={items} activeIndex={activeIndex} onSlideChanged={onSlideChanged} />,
+                    <AliceCarousel mouseTracking disableDotsControls disableButtonsControls infinite items={items} activeIndex={activeIndex} onSlideChanged={onSlideChanged} />
                     <div className="b-refs-buttons">
                         <button className="prev_button" onClick={slidePrev}>
-                            &#60;
+                            <i className="fas fa-long-arrow-alt-left"></i>
                         </button>
                         <button className="next_button" onClick={slideNext}>
-                            &#62;
+                            <i className="fas fa-long-arrow-alt-right"></i>
+                            
                         </button>
                     </div>
                 </div>

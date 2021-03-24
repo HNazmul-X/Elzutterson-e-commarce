@@ -24,10 +24,7 @@ const MyRouter = () => {
     return (
         <>
             <Switch>
-                <Route exact path="/">
-                    <Home />
-                </Route>
-
+                <Route exact path="/"> <Home/></Route>
                 <Route exact path="/register"> <SignUpForm /></Route>
                 <Route exact path="/login"> <LoginFrom /> </Route>
                 <Route exact path="/:schoolId/cart"> <CartPage /> </Route>
