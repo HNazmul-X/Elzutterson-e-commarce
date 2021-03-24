@@ -13,6 +13,10 @@
         .item{
             background:white;
             border-radius: 20px;;
+            cursor: pointer;
+            &:hover{
+                background:lightgray;
+            }
         }
     }
     .form-area{
@@ -40,7 +44,7 @@
         }
         .buttons{
             margin-top:20px;
-            .confirm,.discrad{
+            .confirm,.discard{
                 padding:10px 35px;
                 margin:0px 10px;
                 border-radius:none;
@@ -49,4 +53,10 @@
             
         }
     }
+}
+@media screen and (max-width:992px){
+    #seller-view-product-items-list{
+ width:98%;  
+
+}
 }

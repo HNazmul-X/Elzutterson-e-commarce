@@ -1,4 +1,4 @@
-import React, { useContext, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import Navbar from "../../Components/Navbar/Navbar";
 import { PageContainer, PageSection } from "../../Components/StyledComponents/StyledComponents";
@@ -21,12 +21,37 @@ const Home = () => {
     const drexelBg = "linear-gradient(#E0A414,#1A3478)";
     const pennBg = "linear-gradient(#9D2235,#9D2235)";
 
+
+
+    useEffect(()=> {
+       window.addEventListener("resize",verticalScroller)
+       verticalScroller()
+    })
+
+    const verticalScroller = () => {
+        const landingPageContainer = document.querySelector("#landing-page-container");
+        if (window.screen.availWidth > 993) {
+            window.addEventListener("wheel", (e) => {
+                console.log("event runnitn", "and current screen is" + window.screen.availWidth);
+                if (e.deltaY === 100) {
+                    if(landingPageContainer){
+                        landingPageContainer.scrollLeft += 100;
+                    }
+                }
+                if (e.deltaY === -100) {
+                    if(landingPageContainer){
+                        landingPageContainer.scrollLeft += -100;
+                    }
+                }
+            });
+        }
+    }
     
 
     return (
         <>
             <Navbar />
-            <PageContainer>
+            <PageContainer id="landing-page-container">
                 <PageSection id="home">
                     <div className="d-flex un-logo-part-container">
                         <div className="logo-part">
@@ -34,7 +59,7 @@ const Home = () => {
                                 <img src={tample_logo} alt="" className="img-fluid" />
                             </div>
                             <div className="text-center">
-                                <Link to="/tample/all-products">
+                                <Link to="/temple/all-products">
                                     <button onClick={() => setMyTheme({ background: tampleBg })}>Explore</button>
                                 </Link>
                             </div>

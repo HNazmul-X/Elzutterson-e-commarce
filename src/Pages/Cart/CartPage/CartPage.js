@@ -25,7 +25,7 @@ const CartPage = () => {
             setMyTheme({
                 background: pennBg,
             });
-        } else if (schoolId === "tample") {
+        } else if (schoolId === "temple") {
             setMyTheme({
                 background: tampleBg,
             });

@@ -28,11 +28,18 @@
 
 .alert-cover-area .alert-box .buttons {
   text-align: center;
+  margin-top: 30px;
 }
 
 .alert-cover-area .alert-box .buttons button {
   border: none;
   padding: 7px 25px;
   border-radius: 20px;
+}
+
+@media screen and (max-width: 800px) {
+  .alert-cover-area .alert-box {
+    width: 90% !important;
+  }
 }
 /*# sourceMappingURL=MyAlert.css.map */

@@ -25,7 +25,7 @@ const SellerView = () => {
             setMyTheme({
                 background: pennBg,
             });
-        } else if (schoolId === "tample") {
+        } else if (schoolId === "temple") {
             setMyTheme({
                 background: tampleBg,
             });
@@ -37,7 +37,7 @@ const SellerView = () => {
             <Navbar storeImage={schoolId} />
             <div className="seller-view-page">
                 <PageContainer>
-                    <PageSection className="item-preview-area" width="33%">
+                    <PageSection id="seller-view-product-items-list" className="item-preview-area" width="33%">
                         <div className="item"></div>
                         <div className="item"></div>
                         <div className="item"></div>
@@ -60,7 +60,7 @@ const SellerView = () => {
                             <textarea name="" id="" cols="30" rows="6" placeholder="Description" className="form-control"></textarea>
                         </div>
                         <div className="buttons text-end">
-                            <button onClick={() => setIsConfirmAlertShow(!isConfirmAlertShow)} className="discrad">
+                            <button onClick={() => setIsConfirmAlertShow(!isConfirmAlertShow)} className="discard">
                                 Discard
                             </button>
                             <button onClick={() => setIsConfirmAlertShow(!isConfirmAlertShow)} className="confirm">
@@ -69,7 +69,7 @@ const SellerView = () => {
                         </div>
                     </PageSection>
                 </PageContainer>
-                {/* <BottomBar /> */}
+                <BottomBar />
             </div>
             {/* This alet for confim */}
             <MyAlert isShow={isConfirmAlertShow} theme={myTheme.background} alertText={"Are Your sure "}>

@@ -20,7 +20,7 @@ const Navbar = ({storeImage}) => {
                         <ul className="navbar-nav middle-item">
                             <li className={storeImage?"nav-item":"d-none"}>
                                 <HashLink className="nav-link" to="/#home">
-                                   {storeImage? <img className="img-fluid store-img-logo" src={storeImage === "drexel"? drexel_img : storeImage === "penn"? penn_img : storeImage === "tample" ? tample_img : "" } alt="store Img" /> : ""}
+                                   {storeImage? <img className="img-fluid store-img-logo" src={storeImage === "drexel"? drexel_img : storeImage === "penn"? penn_img : storeImage === "temple" ? tample_img : "" } alt="store Img" /> : ""}
                                 </HashLink>
                             </li>
                             <li className="nav-item ">

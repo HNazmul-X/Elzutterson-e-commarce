@@ -20,6 +20,11 @@
 .seller-view-page .item-preview-area .item {
   background: white;
   border-radius: 20px;
+  cursor: pointer;
+}
+
+.seller-view-page .item-preview-area .item:hover {
+  background: lightgray;
 }
 
 .seller-view-page .form-area {
@@ -67,10 +72,16 @@
   margin-top: 20px;
 }
 
-.seller-view-page .form-area .buttons .confirm, .seller-view-page .form-area .buttons .discrad {
+.seller-view-page .form-area .buttons .confirm, .seller-view-page .form-area .buttons .discard {
   padding: 10px 35px;
   margin: 0px 10px;
   border-radius: none;
   border: none;
+}
+
+@media screen and (max-width: 992px) {
+  #seller-view-product-items-list {
+    width: 98%;
+  }
 }
 /*# sourceMappingURL=sellerView.css.map */

@@ -9,7 +9,7 @@ const ProductsCard = ({ markLogo, linkId }) => {
     const history = useHistory();
     return (
         <div onClick={() => history.push(`/${linkId}/product-view`)} className="product-card">
-            <img src={markLogo === "drexel" ? drexel_logo : markLogo === "penn" ? penn_logo : markLogo === "tample" ? tample_logo : ""} alt="" className="mark-logo" />
+            <img src={markLogo === "drexel" ? drexel_logo : markLogo === "penn" ? penn_logo : markLogo === "temple" ? tample_logo : ""} alt="" className="mark-logo" />
             <div className="product-image">
                 <img src="https://images-na.ssl-images-amazon.com/images/I/41HfDkXXyeL._AC_US218_.jpg" alt="" />
             </div>

@@ -8,7 +8,7 @@ import ProductsCard from './ProductsCard';
 
 const AllProducts = () => {
     const [myTheme, setMyTheme] = useContext(MyThemeContext)
-    const prodcut = ["drexel", "penn", "tample", "tample", "drexel", "tample", "drexel", "drexel", "penn", "tample"];
+    const prodcut = ["drexel", "penn", "temple", "temple", "drexel", "temple", "drexel", "drexel", "penn", "temple"];
     const { schoolId } = useParams()
     const tampleBg = "linear-gradient(#011F5B,#990000)";
     const drexelBg = "linear-gradient(#E0A414,#1A3478)";
@@ -25,7 +25,7 @@ const AllProducts = () => {
                 background:pennBg
             })
         }
-        else if(schoolId === "tample"){
+        else if(schoolId === "temple"){
             setMyTheme({
                 background:tampleBg
             })

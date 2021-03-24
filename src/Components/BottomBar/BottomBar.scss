@@ -16,6 +16,15 @@
             text-decoration: none;
             padding:7px 25px;
             border-right:2px solid #c4c4c4;
+            #icon{
+               font-size: 20px;
+               padding:2px 5px;
+               background:white;
+               color:rgb(87, 87, 87);
+               border-radius: 50%;
+               display: none
+
+            }
             
 
         }
@@ -31,7 +40,14 @@
         .btm-bar-item{
             .btm-bar-link{
                 padding:5px;
-                font-size:12px
+                font-size:12px;
+                border:none;
+                #text{
+                display: none;
+            }
+            #icon{
+                display: block;
+            }
             }
         }
     }

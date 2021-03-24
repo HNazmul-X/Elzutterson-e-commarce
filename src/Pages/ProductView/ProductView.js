@@ -1,4 +1,3 @@
-
 import React, { useContext, useEffect, useState } from 'react';
 import { useParams } from 'react-router';
 import { MyThemeContext } from '../../App';
@@ -6,10 +5,13 @@ import BottomBar from '../../Components/BottomBar/BottomBar';
 import { MyCarousel } from '../../Components/Carousel/MyCarousel';
 import Navbar from '../../Components/Navbar/Navbar';
 import { PageContainer, PageSection } from '../../Components/StyledComponents/StyledComponents';
+import "../sellerView/sellerView.css"
+
+
 
 const ProductView = () => {
 
-    const [isProductSilderShow, setIsProductSliderShow] = useState(true)
+    const [isProductSilderShow, setIsProductSliderShow] = useState(false)
     const [myTheme, setMyTheme] = useContext(MyThemeContext);
     const { schoolId } = useParams();
     const tampleBg = "linear-gradient(#011F5B,#990000)";
@@ -25,7 +27,7 @@ const ProductView = () => {
             setMyTheme({
                 background: pennBg,
             });
-        } else if (schoolId === "tample") {
+        } else if (schoolId === "temple") {
             setMyTheme({
                 background: tampleBg,
             });
@@ -39,7 +41,7 @@ const ProductView = () => {
             <Navbar />
             <div className="seller-view-page">
                 <PageContainer>
-                    <PageSection className="item-preview-area" width="33%">
+                    <PageSection id="seller-view-product-items-list" className="item-preview-area" width="33%">
                         <div  onClick={() => setIsProductSliderShow(!isProductSilderShow)} className="item"></div>
                         <div  onClick={() => setIsProductSliderShow(!isProductSilderShow)} className="item"></div>
                         <div  onClick={() => setIsProductSliderShow(!isProductSilderShow)} className="item"></div>
@@ -65,7 +67,7 @@ const ProductView = () => {
                 </PageContainer>
                 <BottomBar />
                 <MyCarousel isShow={isProductSilderShow}>
-                    <div onClick={() => setIsProductSliderShow(false)} className="carousel-hider"></div>
+                    <div onClick={() => setIsProductSliderShow(!isProductSilderShow)} className="carousel-hider"></div>
                 </MyCarousel>
             </div>
         </>

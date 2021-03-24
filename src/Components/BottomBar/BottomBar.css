@@ -24,6 +24,15 @@
   border-right: 2px solid #c4c4c4;
 }
 
+.bottom-bar .btm-bar-item .btm-bar-link #icon {
+  font-size: 20px;
+  padding: 2px 5px;
+  background: white;
+  color: #575757;
+  border-radius: 50%;
+  display: none;
+}
+
 .bottom-bar .right ul {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
@@ -34,6 +43,13 @@
   .bottom-bar .btm-bar-item .btm-bar-link {
     padding: 5px;
     font-size: 12px;
+    border: none;
+  }
+  .bottom-bar .btm-bar-item .btm-bar-link #text {
+    display: none;
+  }
+  .bottom-bar .btm-bar-item .btm-bar-link #icon {
+    display: block;
   }
 }
 /*# sourceMappingURL=BottomBar.css.map */
